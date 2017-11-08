@@ -1,6 +1,7 @@
 .App {
   text-align: center;
-  background: rgb(128, 128, 128);
+  background: white;
+  color: #303030;
 }
 
 .portrait {
@@ -9,7 +10,7 @@
 }
 
 .App-header {
-  background-color: #222;
+  background-color: rgb(40, 0, 77);
   height: 150px;
   padding: 20px;
   color: white;
@@ -23,6 +24,7 @@ hr{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .specialties{
@@ -40,19 +42,18 @@ hr{
   text-align: center;
   justify-content: center;
 
-  border: 3px rgba(0, 0, 0, 0.60) solid;
-  border-radius: 20px;
-  background-color: #CFCFCF;
+  /* border: 3px rgba(0, 0, 0, 0.60) solid; */
+  background-color: rgb(230, 230, 230);
+  box-shadow: -2px 2px 5px black;
 
   width: 125px;
-
   margin: 5px;
 }
 
 .specialty img{
   border: 1px rgba(0, 0, 0, 0.42) solid;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 5px;
   min-width: 50px;
   max-width: 150px;
   width: 75%;
@@ -60,6 +61,11 @@ hr{
   vertical-align: middle;
 
   align-self: center;
+}
+
+.specialty p{
+  text-align: left;
+  margin-left: 5%;
 }
 
 .projectList{
@@ -78,9 +84,9 @@ hr{
   justify-content: center;
   align-items: center;
 
-  border: 3px rgba(0, 0, 0, 0.7) solid;
-  border-radius: 20px;
-  background-color: #CFCFCF;
+  /* border: 3px rgba(0, 0, 0, 0.7) solid; */
+  box-shadow: -2px 2px 5px black;
+  background-color: rgb(230, 230, 230);
 
   min-width: 200px;
   max-width: 300px;
@@ -97,7 +103,6 @@ hr{
 .project img{
   border: 1px rgb(0, 0, 0) solid;
   background-color: white;
-  border-radius: 20px;
   min-width: 100px;
   max-width: 300px;
   width: 70%;

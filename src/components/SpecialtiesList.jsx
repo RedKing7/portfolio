@@ -8,7 +8,7 @@ class SpecialtiesList extends Component {
         title: 'JavaScript',
         image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/240px-Unofficial_JavaScript_logo_2.svg.png',
         image_alt: 'javascript logo',
-        description: 'Programming skills'
+        description: ''
       },
       {
         title: 'HTML',
@@ -64,11 +64,16 @@ class SpecialtiesList extends Component {
       //   image_alt: 'Java logo',
       //   description: 'Some Java skills'
       // },
+      // {
+      //   title: 'MongoDB',
+      //   image: 'https://cacm.acm.org/system/assets/0002/7119/042117_Theodo_MongoDB.large.jpg?1492791427&1492791427',
+      //   image_alt: 'MongoDB logo',
+      //   description: 'Mongo skills'
+      // },
       {
-        title: 'MongoDB',
-        image: 'https://cacm.acm.org/system/assets/0002/7119/042117_Theodo_MongoDB.large.jpg?1492791427&1492791427',
-        image_alt: 'MongoDB logo',
-        description: 'Mongo skills'
+        title: 'SQL and NoSQL Databases',
+        image: 'http://www.iconarchive.com/download/i90469/icons8/windows-8/Database.ico',
+        image_alt: 'database icon'
       },
       {
         title: 'Git/Github',
