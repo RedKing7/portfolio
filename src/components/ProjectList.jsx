@@ -1,5 +1,16 @@
 import React, { Component } from 'react';
-import Project from './Project'
+import Project from './Project';
+import styled from 'styled-components';
+
+
+const ProjectListDiv = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: center;
+  margin: 0 auto;
+`
 
 class ProjectList extends Component {
   render() {
@@ -52,7 +63,7 @@ class ProjectList extends Component {
     ];
 
     return (
-      <div className='projectList'>
+      <ProjectListDiv>
         {
           projectList.map((project, index) => {
             return <Project
@@ -67,7 +78,7 @@ class ProjectList extends Component {
             />
           })
         }
-      </div>
+      </ProjectListDiv>
     );
   }
 }

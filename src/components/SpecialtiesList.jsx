@@ -1,5 +1,15 @@
 import React, { Component } from 'react';
 import Specialty from './Specialty';
+import styled from 'styled-components';
+
+const Specialties = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: center;
+  margin: 0 auto;
+`
 
 class SpecialtiesList extends Component {
   render() {
@@ -84,13 +94,13 @@ class SpecialtiesList extends Component {
     ]
 
     return (
-      <div className="specialties">
+      <Specialties>
         {
           specialties.map((specialty, index) => {
             return <Specialty title={specialty.title} image={specialty.image} image_alt={specialty.image_alt} description={specialty.description} key={index} />
           })
         }
-      </div>
+      </Specialties>
     )
   }
 }
