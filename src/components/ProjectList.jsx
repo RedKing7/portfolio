@@ -44,7 +44,7 @@ class ProjectList extends Component {
       {
         project: 3,
         title: 'Meal Planner',
-        description: 'An app designed to help plan meals, built using Express, Handlebars, and MongoDB.',
+        description: 'Built using Express, Handlebars, and MongoDB.',
         image: 'images/meal.png',
         deployedLink: 'https://mighty-wildwood-25730.herokuapp.com/',
         githubLink: 'https://github.com/RedKing7/meal_planner',
@@ -53,7 +53,7 @@ class ProjectList extends Component {
       {
         project: 4,
         title: 'Game Backlog',
-        description: 'An app used to keep track of various games a user has, wants to play, and \'needs to finish\'. Built using React.js with React-Router, MongoDB, and Styled Components.',
+        description: 'Built using React.js with React-Router, MongoDB, and Styled Components.',
         image: 'images/project3.png',
         deployedLink: 'https://game-backlog.herokuapp.com/',
         githubLink: 'https://github.com/RedKing7/wdi-project3',

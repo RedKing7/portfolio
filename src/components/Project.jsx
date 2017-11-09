@@ -19,7 +19,10 @@ const Info = styled.div`
   width: 50%;
   h2{
     font-size: 3em;
-    margin: 10px auto;
+    margin: 5px auto;
+  }
+  p{
+    margin: 3px auto;
   }
   a{
     display: flex;

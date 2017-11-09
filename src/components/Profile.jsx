@@ -6,12 +6,16 @@ import styled from 'styled-components';
 const ProfileDiv = styled.div`
   display: flex;
   flex-direction: column;
-
+  align-items: center;
+  
+  background-color: rgb(219,212,204);
+  
   h2{
     font-size: 2em;
     color: white;
     margin: 0;
-    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
     width: 100%;
     background-color: rgb(208,200,190);
@@ -19,9 +23,9 @@ const ProfileDiv = styled.div`
 
   p{
     margin: 0;
-    width: 100%;
-    background-color: rgb(219,212,204);
-    padding: 5% 10%;
+    width: 70%;
+    padding-top: 20px;
+    padding-bottom: 20px;    
     font-size: 2em;
     font-weight: 100;
   }
