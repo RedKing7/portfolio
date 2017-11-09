@@ -47,6 +47,20 @@ const Header = styled.header`
   }
 
 `
+const Footer = styled.footer`
+  width: 100%;
+  background-color: rgb(109,109,109);
+`
+
+const Links = styled.div`
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  img{
+    width: 8vw;
+  }
+`
 
 class App extends Component {
   render() {
@@ -61,7 +75,17 @@ class App extends Component {
         </Header>
         <SpecialtiesList />
         <ProjectList />
-        {/* <Profile /> */}
+        <Profile />
+        <Footer>
+          <Links>
+            <div>
+              <a target="_blank" href="https://github.com/RedKing7"><img src="images/Github.png" alt="github" /></a>
+            </div>
+            <div>
+              <a href="https://www.linkedin.com/in/rory-johnson-2aa396133/"><img src="images/Linkedin.png" alt="linkedin" /></a>
+            </div>
+          </Links>
+        </Footer>
       </Main>
     );
   }

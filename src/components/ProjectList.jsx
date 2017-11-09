@@ -17,6 +17,7 @@ const ProjectListDiv = styled.div`
     padding-top: 5vw;
     padding-bottom: 5vw;
   }
+  border-bottom: 5px solid black;
 `
 
 class ProjectList extends Component {
