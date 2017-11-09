@@ -5,10 +5,11 @@ import styled from 'styled-components';
 const Specialties = styled.div`
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-self: center;
-  margin: 0 auto;
+  justify-content: space-around;
+  height: 25vw;
+  max-height: 120px;
+  align-items: center;
+  align-content: center;
 `
 
 class SpecialtiesList extends Component {
@@ -20,12 +21,12 @@ class SpecialtiesList extends Component {
         image_alt: 'javascript logo',
         description: ''
       },
-      {
-        title: 'HTML',
-        image: 'https://image.freepik.com/free-icon/html-coding_318-31306.jpg',
-        image_alt: 'html logo',
-        description: 'Markup skills'
-      },
+      // {
+      //   title: 'HTML',
+      //   image: 'https://image.freepik.com/free-icon/html-coding_318-31306.jpg',
+      //   image_alt: 'html logo',
+      //   description: 'Markup skills'
+      // },
       {
         title: 'CSS',
         image: 'http://img.freepik.com/free-icon/css-file-format-with-brackets_318-45223.jpg?size=338&ext=jpg',
@@ -81,7 +82,7 @@ class SpecialtiesList extends Component {
       //   description: 'Mongo skills'
       // },
       {
-        title: 'SQL and NoSQL Databases',
+        title: 'SQL and NoSQL',
         image: 'http://www.iconarchive.com/download/i90469/icons8/windows-8/Database.ico',
         image_alt: 'database icon'
       },

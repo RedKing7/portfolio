@@ -4,47 +4,16 @@ import ProjectList from './ProjectList';
 import styled from 'styled-components';
 
 const ProfileDiv = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
 `
 const Footer = styled.footer`
-  width: 100%;
-  background-color: rgb(70, 70, 70);
-  color: white;
+
 `
 const Links = styled.span`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  img{
-    margin: 20px;
-    width: 50px;
-  }
-  div{
-    display: flex;
-    align-items: center;
-    a{
-      text-decoration: none;
-      color: black;
-      font-size: 18px;
-    }
-    a:hover{
-      color: blue;
-    }
-  }
+
 `
 const Header = styled.div`
-  width: 75%;
-  color: rgb(50, 50, 50);
-  small{
-    font-size: .7em;
-  }
-  p{
-    text-align: left;
-    font-size: 1.2em;
-  }
+
 `
 
 class Profile extends Component {
@@ -53,11 +22,6 @@ class Profile extends Component {
     return (
       <ProfileDiv>
         <Header>
-          <h1>
-            Rory Johnson
-            <br />
-            <small>Full Stack Web Developer</small>
-          </h1>
           <hr />
           <h2>My Experience</h2>
           <p>

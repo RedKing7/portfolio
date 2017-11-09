@@ -2,35 +2,41 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const SpecialtyDiv = styled.div`
-  display: flex;
-  flex-direction: column;
+  margin: 5px auto;
+  width: 10vw;
+  min-height: 10vw;
   text-align: center;
-  justify-content: center;
-  background-color: rgb(230, 230, 230);
-  box-shadow: -2px 2px 5px black;
 
-  width: 125px;
-  margin: 5px;
-
-  :hover{
-    box-shadow: -3px 3px 10px black;
-  }
+  font-size: .4em;
 
   img{
-    border: 1px rgba(0, 0, 0, 0.42) solid;
-    background-color: white;
-    border-radius: 5px;
-    min-width: 50px;
-    max-width: 150px;
-    width: 75%;
-    margin: 5px;
-    vertical-align: middle;
-    align-self: center;
+    width: 60px;
+    height: 60px;
+    margin: 1px;
   }
 
-  p{
-    text-align: left;
-    margin-left: 5%;
+  h2{
+    display: none;
+  }
+
+  :hover{
+    box-shadow: 1px 1px 5px black;
+    h2{
+      display: block;
+    }
+  }
+
+  @media(max-width: 500px){
+    img{
+      width: 10vw;
+      height: 10vw;
+    }
+    :hover{
+      box-shadow: none;
+      h2{
+        display: none;
+      }
+    }
   }
 `
 
@@ -40,7 +46,7 @@ class Specialty extends Component {
   render() {
     return (
       <SpecialtyDiv>
-        <img src={this.props.image} alt={this.props.image_alt} />
+        <img src={this.props.image} alt={this.props.image_alt} title={this.props.title} />
         <h2>{this.props.title}</h2>
         {/* <p>{this.props.description}</p> */}
       </SpecialtyDiv>

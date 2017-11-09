@@ -4,12 +4,7 @@ import styled from 'styled-components';
 
 
 const ProjectListDiv = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-self: center;
-  margin: 0 auto;
+
 `
 
 class ProjectList extends Component {
