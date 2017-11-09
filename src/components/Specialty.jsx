@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 const SpecialtyDiv = styled.div`
@@ -15,13 +15,17 @@ const SpecialtyDiv = styled.div`
     margin: 1px;
   }
 
-  h2{
+  p{
     display: none;
+    padding: none;
+    margin: none;
   }
 
   :hover{
-    h2{
+    p{
       display: block;
+      font-weight: 600;
+      font-size: 1.2em;
     }
   }
 
@@ -31,7 +35,7 @@ const SpecialtyDiv = styled.div`
       height: 10vw;
     }
     :hover{
-      h2{
+      p{
         font-size: 4px;
       }
     }
@@ -40,16 +44,14 @@ const SpecialtyDiv = styled.div`
 
 
 
-class Specialty extends Component {
-  render() {
-    return (
-      <SpecialtyDiv>
-        <img src={this.props.image} alt={this.props.image_alt} title={this.props.title} />
-        <h2>{this.props.title}</h2>
-        {/* <p>{this.props.description}</p> */}
-      </SpecialtyDiv>
-    )
-  }
+const Specialty = (props) => {
+  return (
+    <SpecialtyDiv>
+      <img src={props.image} alt={props.image_alt} title={props.title} />
+      <p>{props.title}</p>
+      {/* <p>{props.description}</p> */}
+    </SpecialtyDiv>
+  )
 }
 
 export default Specialty;

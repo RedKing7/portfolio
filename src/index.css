@@ -3,6 +3,9 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+h1, h2, h3, h4{
+  font-family: 'Oswald', sans-serif;
+}
 .num1{
   background-color: rgb(151,110,167);
 }
@@ -17,4 +20,11 @@ body {
 }
 .num5{
   background-color: rgb(252, 246, 255);
+}
+
+#school1{
+  background-color: rgb(190,208,210);
+}
+#school2{
+  background-color: rgb(211,224,225);
 }

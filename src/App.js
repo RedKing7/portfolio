@@ -3,6 +3,7 @@ import Profile from './components/Profile';
 import SpecialtiesList from './components/SpecialtiesList';
 import styled from 'styled-components';
 import ProjectList from './components/ProjectList';
+import Education from './components/Education';
 
 const Main = styled.div`
   font-size: 2vw;
@@ -21,6 +22,7 @@ const Header = styled.header`
   color: white;
   
   font-size: 2em;
+  text-align: center;
 
   img{
     max-width: 300px;
@@ -41,7 +43,6 @@ const Header = styled.header`
     margin-top: 0;
     margin-bottom: 20px;    
     font-weight: 100;
-    letter-spacing: .1em;
   }
 
   @media(max-width: 400px){
@@ -51,11 +52,24 @@ const Header = styled.header`
   }
 
 `
+const NavLinks = styled.div`
+  margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+  a{
+    font-weight: 200;
+    font-size: .7em;
+    text-decoration: none;
+    color: rgb(220,220,220);
+    :hover{
+      color: rgb(108, 72, 139);
+    }
+  }
+`
 const Footer = styled.footer`
   width: 100%;
   background-color: rgb(109,109,109);
 `
-
 const Links = styled.div`
   padding: 10px 0;
   display: flex;
@@ -65,7 +79,18 @@ const Links = styled.div`
     width: 8vw;
     max-width: 50px;
   }
+  a{
+    color: white;
+    font-size: 1.2em;
+    font-weight: 100;
+    text-decoration: none;
+    color: white;
+    :hover{
+      color: rgb(208, 172, 239);
+    }
+  }
 `
+
 
 class App extends Component {
   render() {
@@ -76,18 +101,29 @@ class App extends Component {
           <div>
             <h1>Rory Johnson</h1>
             <h4>full stack web developer</h4>
+            <NavLinks>
+              <a href="#about">About Me</a>
+              <a href="#contact">Contact</a>
+            </NavLinks>
           </div>
         </Header>
         <SpecialtiesList />
         <ProjectList />
-        <Profile />
-        <Footer>
+        <Education />
+        <Profile id="about" />
+        <Footer id="contact">
           <Links>
+            <div>
+              <a href="mailto:redkjohnson@gmail.com">redkjohnson@gmail.com</a>
+            </div>
             <div>
               <a target="_blank" rel="noopener noreferrer" href="https://github.com/RedKing7"><img src="images/Github.png" alt="github" /></a>
             </div>
             <div>
               <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/rory-johnson-2aa396133/"><img src="images/Linkedin.png" alt="linkedin" /></a>
+            </div>
+            <div>
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/RedKing7/portfolio">Repo for this site</a>
             </div>
           </Links>
         </Footer>

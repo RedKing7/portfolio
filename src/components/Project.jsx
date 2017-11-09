@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 const ProjectDiv = styled.div`
@@ -7,7 +7,7 @@ const ProjectDiv = styled.div`
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  height: 32vw;
+  height: 35vw;
   max-height: 300px;
   img{
     max-width: 200px;
@@ -44,32 +44,30 @@ const Info = styled.div`
   }
 `
 
-class Project extends Component {
-  render() {
-    return (
-      <ProjectDiv className={`num${this.props.index}`}>
-        <a target="_blank" rel="noopener noreferrer" href={this.props.project.deployedLink}>
-          <img src={this.props.project.image} alt='something should be here' title={this.props.project.title} />
+const Project = (props) => {
+  return (
+    <ProjectDiv className={`num${props.index}`}>
+      <a target="_blank" rel="noopener noreferrer" href={props.project.deployedLink}>
+        <img src={props.project.image} alt='something should be here' title={props.project.title} />
+      </a>
+
+      <Info>
+        <h2>{props.project.title}</h2>
+        <p>{props.project.description}</p>
+        <a target="_blank" rel="noopener noreferrer" href={props.project.githubLink}>
+          <img src="http://market.designmodo.com/wp-content/uploads/2015/06/github-logo.png" alt="github logo" />
+          Repo
         </a>
+        {
+          props.project.complete ?
+            null
+            :
+            <span><strong>Work in progress</strong></span>
+        }
+      </Info>
 
-        <Info>
-          <h2>{this.props.project.title}</h2>
-          <p>{this.props.project.description}</p>
-          <a target="_blank" rel="noopener noreferrer" href={this.props.project.githubLink}>
-            <img src="http://market.designmodo.com/wp-content/uploads/2015/06/github-logo.png" alt="github logo" />
-            Repo
-          </a>
-          {
-            this.props.project.complete ?
-              null
-              :
-              <span><strong>Work in progress</strong></span>
-          }
-        </Info>
-
-      </ProjectDiv>
-    );
-  }
+    </ProjectDiv>
+  );
 }
 
 export default Project;

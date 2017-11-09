@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 const ProfileDiv = styled.div`
@@ -29,18 +29,15 @@ const ProfileDiv = styled.div`
   }
 `
 
-class Profile extends Component {
-
-  render() {
-    return (
-      <ProfileDiv>
-        <h2>About</h2>
-        <p>
-          I first started programming on a TI-83 calculator in my high school math class, and I've been learning more ever since. I spent two years at Brigham Young University, learning more about programming and how code and computers work. I attended General Assembly in the fall of 2017, a 12 week bootcamp where I learned how to build full-stack web applications using technologies like Node.js, React, and Ruby on Rails. I also gained a lot of experience with JavaScript, using Git and GitHub, and working with and helping others to solve problems.
+const Profile = (props) => {
+  return (
+    <ProfileDiv id={props.id}>
+      <h2>About</h2>
+      <p>
+        I first started programming on a TI-83 calculator in my high school math class, and I've been learning more ever since. I spent two years at Brigham Young University, learning more about programming and how code and computers work. I attended General Assembly in the fall of 2017, a 12 week bootcamp where I learned how to build full-stack web applications using technologies like Node.js, React, and Ruby on Rails. I also gained a lot of experience with JavaScript, using Git and GitHub, and working with and helping others to solve problems.
         </p>
-      </ProfileDiv>
-    )
-  }
+    </ProfileDiv>
+  )
 }
 
 export default Profile;
