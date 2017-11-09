@@ -4,7 +4,19 @@ import styled from 'styled-components';
 
 
 const ProjectListDiv = styled.div`
-
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(88, 52, 119, .2);
+  h1{
+    text-align: center;
+    font-size: 5em;
+    width: 100%;
+    background-color: rgb(88, 52, 119);
+    color: white;
+    margin: 0;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+  }
 `
 
 class ProjectList extends Component {
@@ -13,23 +25,23 @@ class ProjectList extends Component {
       {
         project: 1,
         title: 'Simon',
-        description: 'A recreation of the game Simon, built in 3 days using CSS, JavaScript and jQuery',
+        description: 'Built in 3 days using CSS, JavaScript and jQuery',
         image: 'images/simon.png',
         deployedLink: 'https://redking7.github.io/simon/',
         githubLink: 'https://github.com/RedKing7/simon',
         complete: true
       },
       {
-        project: 1.5,
+        project: 2,
         title: 'Minesweeper',
-        description: 'A faithful recreation of the classic windows-bundled game Minesweeper, built in a week using JavaScript and jQuery.',
+        description: 'Built in a week using JavaScript and jQuery.',
         image: 'images/minesweep.png',
         deployedLink: 'https://redking7.github.io/minesweep/index.html',
         githubLink: 'https://github.com/RedKing7/minesweep',
         complete: true
       },
       {
-        project: 2,
+        project: 3,
         title: 'Meal Planner',
         description: 'An app designed to help plan meals, built using Express, Handlebars, and MongoDB.',
         image: 'images/meal.png',
@@ -38,7 +50,7 @@ class ProjectList extends Component {
         complete: true
       },
       {
-        project: 3,
+        project: 4,
         title: 'Game Backlog',
         description: 'An app used to keep track of various games a user has, wants to play, and \'needs to finish\'. Built using React.js with React-Router, MongoDB, and Styled Components.',
         image: 'images/project3.png',
@@ -47,7 +59,7 @@ class ProjectList extends Component {
         complete: true
       },
       // {
-      //   project: 4,
+      //   project: 5,
       //   title: 'Project 4',
       //   description: 'work in progress',
       //   image: '',
@@ -59,17 +71,13 @@ class ProjectList extends Component {
 
     return (
       <ProjectListDiv>
+        <h1>Projects</h1>
         {
           projectList.map((project, index) => {
             return <Project
-              project={project.project}
-              title={project.title}
-              description={project.description}
-              image={project.image}
-              deployedLink={project.deployedLink}
-              githubLink={project.githubLink}
-              complete={project.complete}
+              project={project}
               key={index}
+              index={index + 1}
             />
           })
         }

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Profile from './components/Profile';
 import SpecialtiesList from './components/SpecialtiesList';
 import styled from 'styled-components';
+import ProjectList from './components/ProjectList';
 
 const Main = styled.div`
   font-size: 2vw;
@@ -59,6 +60,7 @@ class App extends Component {
           </div>
         </Header>
         <SpecialtiesList />
+        <ProjectList />
         {/* <Profile /> */}
       </Main>
     );

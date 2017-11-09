@@ -4,10 +4,10 @@ import styled from 'styled-components';
 const SpecialtyDiv = styled.div`
   margin: 5px auto;
   width: 10vw;
-  min-height: 10vw;
+  max-height: 60px;
   text-align: center;
 
-  font-size: .4em;
+  font-size: 8px;
 
   img{
     width: 60px;
@@ -20,7 +20,6 @@ const SpecialtyDiv = styled.div`
   }
 
   :hover{
-    box-shadow: 1px 1px 5px black;
     h2{
       display: block;
     }
@@ -32,9 +31,8 @@ const SpecialtyDiv = styled.div`
       height: 10vw;
     }
     :hover{
-      box-shadow: none;
       h2{
-        display: none;
+        font-size: 4px;
       }
     }
   }

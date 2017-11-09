@@ -3,3 +3,18 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+.num1{
+  background-color: rgb(151,110,167);
+}
+.num2{
+  background-color: rgb(187,159,196);
+}
+.num3{
+  background-color: rgb(220,206,225);
+}
+.num4{
+  background-color: rgb(240,235,242);
+}
+.num5{
+  background-color: rgb(252, 246, 255);
+}
