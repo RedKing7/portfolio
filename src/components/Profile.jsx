@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import SpecialtiesList from './SpecialtiesList';
-import ProjectList from './ProjectList';
 import styled from 'styled-components';
 
 const ProfileDiv = styled.div`
@@ -11,7 +9,7 @@ const ProfileDiv = styled.div`
   background-color: rgb(219,212,204);
   
   h2{
-    font-size: 2em;
+    font-size: 3em;
     color: white;
     margin: 0;
     padding-top: 10px;

@@ -6,6 +6,10 @@ import ProjectList from './components/ProjectList';
 
 const Main = styled.div`
   font-size: 2vw;
+  @media(min-width: 600px){
+    font-size: 90%;
+  }
+
 `
 const Header = styled.header`
   display: flex;
@@ -59,6 +63,7 @@ const Links = styled.div`
   align-items: center;
   img{
     width: 8vw;
+    max-width: 50px;
   }
 `
 
@@ -79,10 +84,10 @@ class App extends Component {
         <Footer>
           <Links>
             <div>
-              <a target="_blank" href="https://github.com/RedKing7"><img src="images/Github.png" alt="github" /></a>
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/RedKing7"><img src="images/Github.png" alt="github" /></a>
             </div>
             <div>
-              <a href="https://www.linkedin.com/in/rory-johnson-2aa396133/"><img src="images/Linkedin.png" alt="linkedin" /></a>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/rory-johnson-2aa396133/"><img src="images/Linkedin.png" alt="linkedin" /></a>
             </div>
           </Links>
         </Footer>

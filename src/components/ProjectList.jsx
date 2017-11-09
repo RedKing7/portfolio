@@ -7,17 +7,22 @@ const ProjectListDiv = styled.div`
   display: flex;
   flex-direction: column;
   background-color: rgba(88, 52, 119, .2);
-  h1{
-    text-align: center;
-    font-size: 5em;
-    width: 100%;
-    background-color: rgb(88, 52, 119);
-    color: white;
-    margin: 0;
-    padding-top: 5vw;
-    padding-bottom: 5vw;
-  }
   border-bottom: 5px solid black;
+`
+const Title = styled.div`
+  width: 100%;
+  background-color: rgb(88, 52, 119);
+  height: 15vw;
+  max-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1{
+    font-size: 5em;
+    color: white;
+    line-height: inherit;
+  }
 `
 
 class ProjectList extends Component {
@@ -72,7 +77,9 @@ class ProjectList extends Component {
 
     return (
       <ProjectListDiv>
-        <h1>Projects</h1>
+        <Title>
+          <h1>Projects</h1>
+        </Title>
         {
           projectList.map((project, index) => {
             return <Project
