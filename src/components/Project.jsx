@@ -9,9 +9,10 @@ const ProjectDiv = styled.div`
   align-items: center;
   height: 35vw;
   max-height: 300px;
+  padding: 0 10%;
   img{
     max-width: 200px;
-    width: 20vw;
+    width: 25vw;
   }
 `
 

@@ -109,8 +109,8 @@ class App extends Component {
         </Header>
         <SpecialtiesList />
         <ProjectList />
-        <Education />
         <Profile id="about" />
+        <Education />
         <Footer id="contact">
           <Links>
             <div>

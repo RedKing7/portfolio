@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const EducationDiv = styled.div`
+  color: rgb(50,50,50);
   width: 100%;
   text-align: center;
   h1{
@@ -27,17 +28,21 @@ const School = styled.div`
   align-items: center;
 
   img{
-    margin: 0 5%;
+    margin-left: 5%;
     height: 20vw;
     max-height: 250px;
   }
-  `
+`
 const Info = styled.div`
   margin: 0 10%;
   display: flex;
   flex-direction: column;
   h2{
     margin: 0;
+  }
+  p{
+    text-align: left;
+    font-size: 1.2em;
   }
 `
 
@@ -48,18 +53,18 @@ const Education = () => {
       <School id="school1">
         <img src="images/byu.png" alt="Brigham Young University Provo" />
         <Info>
-          <h2>Class</h2>
+          <h2>Brigham Young University</h2>
           <p>
-            Two years of Computer Science classes
+            I spent two years at Brigham Young University, learning the basics of C++ and a bit of C and Assembly. I made several command-line programs, and overall gained a greater understanding of programming, especially object-oriented programming.
           </p>
         </Info>
       </School>
       <School id="school2">
         <img src="http://static-assets.generalassemb.ly/logos/generalassembly-open-graph.png" alt="General Assembly" />
         <Info>
-          <h2>Class</h2>
+          <h2>Web Development Immersive</h2>
           <p>
-            Twelve week Web Development Immersive course
+            I attended General Assembly in the fall of 2017, a 12 week bootcamp where I learned how to build full-stack web applications using technologies like Node.js, React, and Ruby on Rails. I also gained a lot of experience with JavaScript, using Git and GitHub, and working with and helping others to solve problems.
           </p>
         </Info>
       </School>

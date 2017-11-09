@@ -1,10 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
 }
 h1, h2, h3, h4{
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-variant: small-caps;
 }
 .num1{
   background-color: rgb(151,110,167);
