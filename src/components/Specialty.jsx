@@ -12,20 +12,19 @@ const SpecialtyDiv = styled.div`
   img{
     width: 60px;
     height: 60px;
-    margin: 1px;
   }
 
   p{
     display: none;
     padding: none;
-    margin: none;
+    margin: 0;
   }
 
   :hover{
     p{
       display: block;
       font-weight: 600;
-      font-size: 1.2em;
+      font-size: 2em;
     }
   }
 

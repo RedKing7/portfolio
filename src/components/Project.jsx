@@ -8,29 +8,31 @@ const ProjectDiv = styled.div`
   justify-content: space-around;
   align-items: center;
   height: 35vw;
-  max-height: 300px;
+  max-height: 350px;
   padding: 0 10%;
-  img{
-    max-width: 200px;
-    width: 25vw;
+  .project-img{
+    max-height: 300px;
+    height: 25vw;
   }
 `
 
 const Info = styled.div`
   width: 50%;
+  height: 70%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   h2{
     font-size: 3em;
-    margin: 5px auto;
+    margin: 0 auto;
   }
   p{
-    margin: 10px auto;
-    font-size: 1.5em;
+    margin: 0 auto;
+    font-size: 1.7em;
     text-align: center;
   }
   a{
+    margin: 0 auto;
     align-self: center;
     display: flex;
     align-items: center;
@@ -49,7 +51,7 @@ const Project = (props) => {
   return (
     <ProjectDiv className={`num${props.index}`}>
       <a target="_blank" rel="noopener noreferrer" href={props.project.deployedLink}>
-        <img src={props.project.image} alt='something should be here' title={props.project.title} />
+        <img className="project-img" src={props.project.image} alt='something should be here' title={props.project.title} />
       </a>
 
       <Info>

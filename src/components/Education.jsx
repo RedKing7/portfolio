@@ -6,14 +6,15 @@ const EducationDiv = styled.div`
   width: 100%;
   text-align: center;
   h1{
-    font-size: 3em;
+    font-size: 3.5em;
+    color: white;
+    line-height: inherit;
     margin: 0;
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
     width: 100%;
     background-color: rgb(169,193,197);
-    color: white;
   }
 `
 const School = styled.div`
@@ -64,7 +65,7 @@ const Education = () => {
         <Info>
           <h2>Web Development Immersive</h2>
           <p>
-            I attended General Assembly in the fall of 2017, a 12 week bootcamp where I learned how to build full-stack web applications using technologies like Node.js, React, and Ruby on Rails. I also gained a lot of experience with JavaScript, using Git and GitHub, and working with and helping others to solve problems.
+            I attended General Assembly in the fall of 2017, a 12 week bootcamp where I learned how to build full-stack web applications using technologies like Node.js, React, and Ruby on Rails. I also gained a lot of experience with JavaScript, using Git and GitHub, and working with and helping others to solve coding problems.
           </p>
         </Info>
       </School>

@@ -8,9 +8,10 @@ const ProfileDiv = styled.div`
   
   background-color: rgb(219,212,204);
   
-  h2{
-    font-size: 3em;
+  h1{
+    font-size: 4em;
     color: white;
+    line-height: inherit;
     margin: 0;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -32,9 +33,9 @@ const ProfileDiv = styled.div`
 const Profile = (props) => {
   return (
     <ProfileDiv id={props.id}>
-      <h2>About</h2>
+      <h1>About</h1>
       <p>
-        I first started programming on a TI-83 calculator in my high school math class, and I've been learning more ever since. I spent two years at Brigham Young University, learning more about programming and how code and computers work. I attended General Assembly in the fall of 2017, a 12 week bootcamp where I learned how to build full-stack web applications using technologies like Node.js, React, and Ruby on Rails. I also gained a lot of experience with JavaScript, using Git and GitHub, and working with and helping others to solve problems.
+        I first started programming on a TI-83 calculator in my high school math class, and I've been learning more ever since. I have experience in JavaScript, React, Ruby on Rails, and Node. I'm pretty good with CSS, creating responsive webpages from a design. I also have some experience with C++, Java, and TI-Basic, though I'm not sure anyone would hire me to program their calculator.
         </p>
     </ProfileDiv>
   )
