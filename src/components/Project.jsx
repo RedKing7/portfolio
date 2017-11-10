@@ -9,7 +9,7 @@ const ProjectDiv = styled.div`
   align-items: center;
   height: 35vw;
   max-height: 350px;
-  padding: 0 10%;
+  padding: 10px 10%;
   .project-img{
     max-height: 300px;
     height: 25vw;

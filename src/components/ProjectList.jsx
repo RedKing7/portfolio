@@ -19,6 +19,7 @@ const Title = styled.div`
   justify-content: center;
 
   h1{
+    margin: 0;
     font-size: 5em;
     color: white;
     line-height: inherit;

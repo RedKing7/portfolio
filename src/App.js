@@ -41,8 +41,9 @@ const Header = styled.header`
   }
   h4{
     margin-top: 0;
-    margin-bottom: 20px;    
+    margin-bottom: .5em;    
     font-weight: 100;
+    letter-spacing: .05em;
   }
 
   @media(max-width: 400px){
@@ -54,9 +55,11 @@ const Header = styled.header`
 `
 const NavLinks = styled.div`
   margin-top: 0;
+  margin-bottom: 1em;
   display: flex;
   justify-content: space-between;
   a{
+    letter-spacing: .1em;    
     font-weight: 200;
     font-size: .7em;
     text-decoration: none;
