@@ -64,15 +64,15 @@ const ProjectList = () => {
       githubLink: 'https://github.com/RedKing7/wdi-project3',
       complete: true
     },
-    // {
-    //   project: 5,
-    //   title: 'Project 4',
-    //   description: 'work in progress',
-    //   image: '',
-    //   deployedLink: '',
-    //   githubLink: '',
-    //   complete: false
-    // }
+    {
+      project: 5,
+      title: 'Text-Alerts',
+      description: 'Built with Ruby on Rails and React, Twilio and Authy API\'s, and delayed_jobs.',
+      image: 'images/text-alerts.png',
+      deployedLink: 'text-alerts-wdi12.herokuapp.com',
+      githubLink: 'https://github.com/RedKing7/text-alerts',
+      complete: true
+    }
   ];
 
   return (
