@@ -69,7 +69,7 @@ const ProjectList = () => {
       title: 'Text-Alerts',
       description: 'Built with Ruby on Rails and React, Twilio and Authy API\'s, and delayed_jobs.',
       image: 'images/text-alerts.png',
-      deployedLink: 'text-alerts-wdi12.herokuapp.com',
+      deployedLink: 'https://text-alerts-wdi12.herokuapp.com',
       githubLink: 'https://github.com/RedKing7/text-alerts',
       complete: true
     }
