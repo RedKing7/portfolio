@@ -15,7 +15,7 @@ const ProfileDiv = styled.div`
     width: 70%;
     padding-top: 20px;
     padding-bottom: 20px;    
-    font-size: 2em;
+    font-size: 1.6em;
     font-weight: 100;
   }
 `
