@@ -62,7 +62,7 @@ const Education = () => {
         <Info>
           <h2>Web Development Immersive</h2>
           <p>
-            I attended General Assembly in the fall of 2017, a 12 week bootcamp where I learned how to build full-stack web applications using technologies like Node.js, React, and Ruby on Rails. I also gained a lot of experience with JavaScript, using Git and GitHub, and working with and helping others to solve coding problems.
+            I attended General Assembly in the fall of 2017, a 12 week bootcamp where I learned how to build full-stack web applications using technologies like Node.js, React, and Ruby on Rails. I also gained a lot of experience with JavaScript, using Git and GitHub, and working with and helping others to solve coding problems. During the course, I built the projects listed above, each with their own restraints and deadlines.
           </p>
         </Info>
       </School>

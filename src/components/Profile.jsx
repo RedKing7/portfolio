@@ -43,7 +43,7 @@ const Profile = (props) => {
         <h1>About</h1>
       </Title>
       <p>
-        I first started programming on a TI-83 calculator in my high school math class, and I've been learning more ever since. I have experience in JavaScript, React, Ruby on Rails, and Node. I'm good with and enjoy using CSS and React to build responsive, scalable websites. I also have some experience with C++ and Java, and a working understanding of object-oriented programming.
+        I first started programming on a TI-83 calculator in my high school math class, and I've been learning more ever since. I have experience in JavaScript, React, Ruby on Rails, and Node, and with using Rails and Node to create and interact with existing API's. I'm good with and enjoy using CSS and React to build responsive, scalable websites. I also have some experience with C++ and Java, and a working understanding of object-oriented programming.
       </p>
     </ProfileDiv>
   )
