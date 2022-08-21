@@ -58,7 +58,7 @@ const Project = (props) => {
         <h2>{props.project.title}</h2>
         <p>{props.project.description}</p>
         <a target="_blank" rel="noopener noreferrer" href={props.project.githubLink}>
-          <img src="http://market.designmodo.com/wp-content/uploads/2015/06/github-logo.png" alt="github logo" />
+          <img src="images/github-logo.png" alt="github logo" />
           Repo
         </a>
         {

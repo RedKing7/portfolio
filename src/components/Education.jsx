@@ -58,7 +58,7 @@ const Education = () => {
         <h1>Education</h1>
       </Title>
       <School id="school1">
-        <img src="http://static-assets.generalassemb.ly/logos/generalassembly-open-graph.png" alt="General Assembly" />
+        <img src="images/generalassembly-open-graph.png" alt="General Assembly" />
         <Info>
           <h2>Web Development Immersive</h2>
           <p>

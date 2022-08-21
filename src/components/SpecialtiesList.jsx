@@ -29,7 +29,7 @@ const specialties = [
   },
   {
     title: 'React',
-    image: 'https://cdn.worldvectorlogo.com/logos/react.svg',
+    image: 'images/logo-react-icon.png',
     image_alt: 'react logo'
   },
   {
